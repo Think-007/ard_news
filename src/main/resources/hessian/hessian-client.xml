@@ -16,12 +16,12 @@
 		<property name="readTimeout" value="1000" />
 	</bean>
 	 -->
-	 
-	 <bean id="nameFacade"
-		class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
+
+	<bean id="idCreatorFacade"
+		  class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
 		<property name="serviceInterface"
-			value="com.think.boot.facade.NameFacade" />
-		<property name="serviceUrl" value="${nameservice.url}NameFacade" />
+				  value="com.think.creator.facade.IdCreatorFacade" />
+		<property name="serviceUrl" value="${ard.id.url}IdCreatorFacade" />
 		<property name="readTimeout" value="1000" />
 	</bean>
 	
