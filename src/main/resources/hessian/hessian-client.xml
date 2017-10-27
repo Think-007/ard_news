@@ -21,7 +21,7 @@
 		  class="org.springframework.remoting.caucho.HessianProxyFactoryBean">
 		<property name="serviceInterface"
 				  value="com.think.creator.facade.IdCreatorFacade" />
-		<property name="serviceUrl" value="${ard.id.url}IdCreatorFacade" />
+		<property name="serviceUrl" value="${id.url}IdCreatorFacade" />
 		<property name="readTimeout" value="1000" />
 	</bean>
 	
